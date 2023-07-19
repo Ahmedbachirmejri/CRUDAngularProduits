@@ -1,0 +1,156 @@
+.product-box {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .product-box .product-details {
+    padding: 15px 25px;
+  }
+  .product-box .product-details p {
+    margin-bottom: 0;
+    opacity: 0.8;
+  }
+  .product-box .product-details h4 {
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: roboto;
+  }
+  .product-box .product-details h6 {
+    color: #2b2b2bFF;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .product-box .product-details span {
+    color: #898989FF;
+  }
+  .product-box .product-details .rating i {
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #ffa800;
+  }
+  .product-box .product-img {
+    position: relative;
+  }
+  .product-box .product-img .product-hover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 10, 0, 0.3);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(0);
+    transition: all 0.3s ease;
+  }
+  .product-box .product-img .product-hover ul li {
+    display: inline-block;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.08);
+    padding: 10px 12px;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    height: 45px;
+    width: 45px;
+    margin: 0 3px;
+    cursor: pointer;
+  }
+  .product-box .product-img .product-hover ul li i {
+    color: #59667aFF;
+    font-size: 18px;
+  }
+  .product-box .product-img .product-hover ul li .btn {
+    padding: 0;
+  }
+  .product-box .product-img .product-hover ul li:hover {
+    background-color: #7366ffFF;
+    transition: all 0.3s ease;
+  }
+  .product-box .product-img .product-hover ul li:hover .btn, .product-box .product-img .product-hover ul li:hover i {
+    color: white;
+  }
+  .product-box:hover .product-hover {
+    opacity: 1;
+    border-radius: 0%;
+    transform: scale(1);
+    transition: all 0.3s ease;
+  }
+  .product-modal .product-box .product-details h6 {
+    text-transform: capitalize;
+  }
+  .product-modal .product-box .product-details .product-price {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .product-modal .product-box .product-details .product-view {
+    padding: 20px 0;
+    border-top: 1px dotted #59667aFF;
+    border-bottom: 1px dotted #59667aFF;
+  }
+  .product-modal .product-box .product-details .product-size {
+    margin: 20px 0;
+  }
+  .product-modal .product-box .product-details .product-size ul li {
+    display: inline-block;
+  }
+  .product-modal .product-box .product-details .product-size ul li + li {
+    margin-left: 5px;
+  }
+  .product-modal .product-box .product-details .addcart-btn {
+    margin-top: 30px;
+  }
+  .product-modal .product-box .product-details .product-qnty fieldset {
+    margin-bottom: 20px;
+  }
+  .product-modal .product-box .product-details .product-qnty fieldset .input-group {
+    width: 35%;
+  }
+  .product-modal .product-box .product-details .product-qnty fieldset .input-group .btn {
+    padding: 5px 12px;
+  }
+  .product-modal .product-box .product-details .product-qnty fieldset .input-group .btn-primary {
+    background-color: #59667aFF !important;
+    border: 1px solid #59667AFF !important;
+  }
+  .product-price {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 5px;
+    color: #7366FFFF;
+  }
+  .product-price del {
+    padding-left: 10px;
+    font-size: 80%;
+    color: rgba(44,50,63);
+  }
+  .product-grid .product-wrapper-grid {
+    margin-left: 0;
+    transition: 0.3s;
+  }
+  
+  .product-wrapper-grid.list-view .product-box {
+    display: flex;
+    align-items: center;
+  }
+  .product-wrapper-grid.list-view .product-box .product-img {
+    width: 20%;
+  }
+  .product-wrapper-grid.list-view .product-box .product-details {
+    text-align: left;
+  }
+  .product-box .product-details {
+    padding: 15px;
+  }
+  .product-box .product-details p {
+    margin-bottom: 10px;
+  }
+  .product-wrapper-grid.list-view .product-box .product-img {
+    width: 25%;
+  }
+  .product-wrapper-grid.list-view .product-box .product-img {
+    width: 42%;
+  }
+  
+  
