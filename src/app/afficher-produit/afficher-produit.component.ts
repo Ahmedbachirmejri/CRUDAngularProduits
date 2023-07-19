@@ -44,9 +44,8 @@ export class AfficherProduitComponent implements OnInit {
   }
   filterProducts(): ProductModel[] {
     if (!this.searchTerm) {
-      return this.products; // Retourner tous les produits si aucun terme de recherche n'est saisi
+      return this.products; 
     }
-    // Filtre les produits par nom en utilisant le terme de recherche
     return this.products.filter(product => product.nom.toLowerCase().includes(this.searchTerm.toLowerCase()));
   }
   

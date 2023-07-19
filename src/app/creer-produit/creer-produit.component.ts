@@ -33,7 +33,6 @@ export class CreerProduitComponent implements OnInit {
       return;
     }
 
-    // Préparez l'objet du produit à envoyer au backend
     const productData = this.addForm.value;
 
     this.productService.addProduct(productData)
@@ -49,12 +48,5 @@ export class CreerProduitComponent implements OnInit {
       );
   }
 
-  onImageChange(event: any) {
-    // Récupérer l'image sélectionnée
-    const file = event.target.files[0];
-    this.selectedImage = file;
-  }
-
-  // get the form short name to access the form fields
   get f() { return this.addForm.controls; }
 }

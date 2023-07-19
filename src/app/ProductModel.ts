@@ -3,5 +3,4 @@ export class ProductModel {
     nom!: String;
     quantite!: Number;
     prix!: Number;
-    image!: String;
 }

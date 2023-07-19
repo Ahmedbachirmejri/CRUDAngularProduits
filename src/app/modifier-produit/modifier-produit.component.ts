@@ -36,9 +36,10 @@ export class ModifierProduitComponent implements OnInit {
     });
 
     this.productService.getProductById(productId).subscribe(data => {
+      this.product = data;
       console.log(data);
       this.editForm.patchValue({
-        id: productId, // Set the id from the API response
+        id: productId, 
         nom: data.nom,
         quantite: data.quantite,
         prix: data.prix,
@@ -55,7 +56,7 @@ export class ModifierProduitComponent implements OnInit {
     this.submitted = true;
   
     if (this.editForm.valid) {
-      const productId = this.editForm.value.id; // Get the product ID from the form
+      const productId = this.editForm.value.id; 
   
       if (!productId) {
         console.log('Product ID is undefined.');

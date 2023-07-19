@@ -2,13 +2,12 @@ import Product from "../models/Product.js";
 
 export async function addOnce(req, res) {
   try {
-    const { nom, prix, quantite, image } = req.body;
+    const { nom, prix, quantite } = req.body;
 
     const newProduct = await Product.create({
       nom: nom,
       prix: prix,
       quantite: quantite,
-      image: image,
     });
 
     console.log(newProduct);
@@ -22,7 +21,8 @@ export async function addOnce(req, res) {
 }
 
 export async function getOnce  (req, res) {
-  res.send({ product: await Product.findById(req.params.id) })
+  const product = await Product.findById(req.params.id)
+  res.send(product)
 }
 
 
@@ -33,7 +33,6 @@ export async function putOnce(req, res)
     newProduct = {
       nom: req.body.nom,
       quantite: req.body.quantite,
-      image : req.body.image,
       prix: req.body.prix,
         }
   }
@@ -41,7 +40,6 @@ export async function putOnce(req, res)
     newProduct = {
       nom: req.body.nom,
       quantite: req.body.quantite,
-      image: `${req.file.filename}`,
       prix: req.body.prix,
 
       
