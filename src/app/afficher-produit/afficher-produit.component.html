@@ -21,7 +21,7 @@
       <tbody>
         <tr *ngFor="let product of filterProducts()">
           <td>{{ product.nom }}</td>
-          <td>{{ product.quantite.toString()  }}</td>
+          <td>{{ product.quantite.toString() }}</td>
           <td>{{ product.prix.toString() | currency : 'USD' : true }}</td>
           <td>
             <button (click)="deleteProduct(product)" class="btn btn-info">Delete</button>
