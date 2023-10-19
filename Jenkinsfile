@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        NODEJS_VERSION = '18'
+        NODEJS_VERSION = '18.17.1'
         ANGULAR_CLI_VERSION = '16.1.4'
     }
     
