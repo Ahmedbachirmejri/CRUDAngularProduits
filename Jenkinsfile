@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Install Dependencies') {
             steps {
-                sh 'npm install -g @angular/cli@${ANGULAR_CLI_VERSION}'
+                sh 'npm install -g @angular/cli@16.1.4'
                 sh 'npm install'
             }
         }
