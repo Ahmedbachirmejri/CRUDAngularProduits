@@ -12,7 +12,13 @@ pipeline {
                 checkout scm
             }
         }
-
+        stage('Debug') {
+            steps {
+                sh 'ls -la'  // List files in the workspace
+                sh 'env'     // Display environment variables
+                sh 'git remote -v'  // Show Git remote information
+            }
+        }
         stage('Install Dependencies') {
             steps {
                 sh 'npm install -g @angular/cli@${ANGULAR_CLI_VERSION}'
