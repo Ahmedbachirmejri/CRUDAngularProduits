@@ -9,6 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+                git credentialsId: 'c66b4b7a-ee9b-4c21-aee2-e89c1d65d1d2', url: 'https://github.com/Ahmedbachirmejri/CRUDAngularProduits'
                 checkout scm
             }
         }
